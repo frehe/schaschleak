@@ -1,0 +1,239 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TUM JA: - Team SchaschLeak</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/creative.min.css' %}" rel="stylesheet">
+
+    <!--JQuery from Google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--<script src="isInViewport-3.0.4/lib/isInViewport.js"></script>-->
+    <script src="lib/vissense.min.js"></script>
+    <script>
+    var myVideo = document.getElementById('myVideo');
+
+VisSense.VisMon.Builder(VisSense(myVideo, {
+    fullyvisible: 0.75
+}))
+.on('fullyvisible', function() {
+    myVideo.play();
+})
+.on('hidden', function() {
+    myVideo.pause();
+})
+.build()
+.start();
+   </script>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">SchaschLeak</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Über uns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#aktionen">Aktionen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#galerie">Galerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-black d-flex" style="background-color: black">
+      <div style="position:relative; width:100%">
+      <video style="width:100%" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+         <source src="static/video/720p.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+      </video>
+      </div>
+      <div style="background: rgba(0,0,0,0); position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center; justify-content: center;">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Los geht's!</a>
+          </div>
+        </div>
+   </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Warum du hier genau richtig bist:</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">Unser Ziel ist es, Dir einen bewussten Blick auf gängige Werbepraktiken zu verleihen und Dir zu helfen, falsche Aussagen über Produkte zu erkennen. Wir wollen, dass Du die Macht über Deine eigenen Kaufentscheidungen zurückgewinnst und nicht von immer besseren Werbepraktiken der Unternehmen manipuliert wirst!</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="#aktionen">Klick weiter! :)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aktionen">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Unser neuestes Video</h2>
+            <hr class="my-4">
+          </div>
+       </div>
+         <div class="row">
+            <div class="col-lg-12 text-center">
+               <video id="myVideo" style="width:100%">
+                  <source src="static/video/schaschleak.mp4" type="video/mp4">
+               </video>
+            </div>
+         </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Neugierig geworden?</h2>
+        <h5>Sag uns was Du denkst <b>und gewinne<b>!</h5>
+         <br>
+        <a class="btn btn-light btn-xl sr-button" href="https://evasys.zv.tum.de/evasys/online.php?p=schaschleak">Hier entlang!</a>
+      </div>
+    </section>
+
+    <section class="p-0" id="galerie">
+      <div class="container text-center">
+         <br><br>
+         <h2 class="mb-4 section-heading"><b>Unsere Plakate</b></h2>
+         <br>
+      </div>
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="static/img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="static/img/portfolio/thumbnails/1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                     <h5>Category</h5>
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="static/img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="static/img/portfolio/thumbnails/2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="static/img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="static/img/portfolio/thumbnails/3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading"><b>Du bist auf den unwiderstehlichen (Schaschleak-)Geschmack gekommen?</b></h2>
+            <hr class="my-4">
+            <p class="mb-5">Wir heißen Anreize und gute Satire-Poster Ideen herzlichst wilkommen. Schreib uns doch einfach eine Mail.
+              Vielleicht ist deine Idee schon bald hier und in den Münchner Unis zu sehen! :)</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:economic@jungeakademie.tum.de">economic@jungeakademie.tum.de</a>
+            </p>
+          </div>
+          <div class="col-lg-6 mr-auto text-center">
+            <i class="fa fa-desktop fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="https://www.jungeakademie.tum.de/schaschleak/">Junge Akademie - SchaschLeak</a>
+            </p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+           <a href="http://www.jungeakademie.tum.de">
+             <img class="img-fluid" src="static/img/Schaschleak Logo.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'vendor/scrollreveal/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/creative.min.js' %}"></script>
+
+  </body>
+
+</html>
